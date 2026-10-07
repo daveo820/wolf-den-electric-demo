@@ -1,0 +1,35 @@
+/* Wolf Den Electric concept: tokens. Wolf red and charcoal sampled from the Wolf Den logo (#d61f42, #545555). */
+:root{
+  --den:#19191b;        /* near black: cover, dark bands */
+  --charcoal:#545555;   /* logo gray: rules, muted on dark */
+  --pelt:#8d877f;       /* warm gray: borders on dark */
+  --bone:#eee9e1;       /* paper panels */
+  --snow:#faf8f5;       /* page */
+  --wolf:#d61f42;       /* logo red: buttons, marks, large type */
+  --wolf-dk:#a8172f;    /* red for small text on light, 6.6:1 on snow */
+  --ink:#1f1f22;        /* body text */
+  --mute:#5c5852;       /* muted text, 6.6:1 on snow */
+  --f-display:"Bricolage Grotesque",Impact,sans-serif;
+  --f-body:"Literata",Georgia,serif;
+  --step-0:1.125rem;    /* 18px body */
+  --step-2:1.5rem;--step-3:clamp(1.9rem,3.2vw,2.5rem);--step-4:clamp(2.2rem,4.6vw,3.5rem);--step-5:clamp(2.6rem,6vw,5rem);
+  --ink-ease:cubic-bezier(.22,1,.36,1);
+  --wrap:1240px;--gut:clamp(20px,4vw,44px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--snow);color:var(--ink);font:400 var(--step-0)/1.65 var(--f-body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
+h1,h2,h3{font-family:var(--f-display);font-weight:800;font-stretch:88%;line-height:.98;letter-spacing:-.02em;margin:0}
+h1 em,h2 em{font-style:normal;color:var(--wolf-dk)}
+p{margin:0 0 1em;max-width:66ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--wolf);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.kicker{display:flex;align-items:center;gap:10px;margin:0 0 18px;font:700 .78rem/1.3 var(--f-display);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.kicker--red{color:var(--wolf-dk)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:8px;background:var(--den);color:#fff;padding:10px 14px;z-index:99}
+.skip:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

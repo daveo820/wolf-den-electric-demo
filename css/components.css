@@ -1,0 +1,72 @@
+/* signature: the Triangle mark. A small red triangle for the Research Triangle, used as kicker mark, bullet and sign off */
+.tri{width:12px;height:11px;fill:var(--wolf);flex:none}
+.demo-bar{background:#000;color:#e8e4dd;font:400 .86rem/1.45 var(--f-display);padding:8px var(--gut);text-align:center}
+.demo-bar a{color:#ff8fa3}
+.top{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.95);backdrop-filter:blur(8px);border-bottom:2px solid var(--den)}
+.nav{display:flex;align-items:center;gap:26px;min-height:70px}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.mark b{display:block;font:800 1.35rem/1 var(--f-display);font-stretch:80%;text-transform:uppercase;letter-spacing:.01em}
+.mark small{display:block;font:600 .68rem/1.3 var(--f-display);letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+#menu{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+#menu a{text-decoration:none;font:600 1rem/1 var(--f-display);padding:8px 0;border-bottom:3px solid transparent}
+#menu a:hover,#menu a[aria-current]{border-color:var(--wolf)}
+.menu-btn{display:none}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:0;background:var(--den);color:#fff;font:700 1rem/1.1 var(--f-display);letter-spacing:.01em;text-decoration:none;border:2px solid var(--den);cursor:pointer;transition:background .25s,color .25s,box-shadow .25s}
+.btn:hover{box-shadow:5px 5px 0 var(--wolf)}
+.btn--red{background:var(--wolf);border-color:var(--wolf)}
+.btn--red:hover{background:var(--wolf-dk);border-color:var(--wolf-dk);box-shadow:5px 5px 0 var(--den)}
+.btn--ghost{background:transparent;color:inherit;border-color:currentColor}
+.btn--dark{background:var(--den)}
+.cl-short{display:none}
+.stars{color:var(--wolf)}
+.note{font-size:.95rem;color:var(--mute);border-left:3px solid var(--wolf);padding:6px 0 6px 14px}
+.fine{font-size:.88rem;color:var(--mute)}
+.ph-tag{display:inline-block;font:700 .66rem/1 var(--f-display);letter-spacing:.14em;text-transform:uppercase;background:#ffd23f;color:#1a1a1a;padding:4px 7px;vertical-align:middle}
+.crumbs{font:600 .8rem/1 var(--f-display);color:var(--mute);margin-bottom:22px}
+.crumbs a{color:var(--wolf-dk)}
+
+/* letters (reviews) */
+.letter{margin:0;padding:0 0 22px;border-bottom:1px solid #d8d1c6}
+.letter p{font-size:1.02rem;line-height:1.7;margin:0 0 14px}
+.letter footer{display:flex;align-items:center;gap:10px;font:600 .8rem/1.3 var(--f-display);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.letter time{margin-left:auto;color:var(--wolf-dk)}
+.letter--lead p{font-size:1.3rem;line-height:1.55;font-style:italic}
+
+/* motion: ink settle. Fade, 24px rise and a short blur clearing, like ink drying on a page */
+.js-ready .rv{opacity:0;transform:translateY(24px);filter:blur(3px);transition:opacity .7s var(--ink-ease),transform .7s var(--ink-ease),filter .7s var(--ink-ease)}
+.js-ready .rv.in{opacity:1;transform:none;filter:none}
+
+/* footer: the back page */
+.site-foot{background:var(--den);color:#d9d4cc;margin-top:120px;padding:90px 0 30px}
+.site-foot a{color:#fff}
+.back{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:end;padding-bottom:56px;border-bottom:1px solid #3a3a3d}
+.kicker--red{color:var(--wolf-dk)}
+.site-foot .kicker--red{color:#ff7d93}
+.bp-call{font:800 var(--step-5)/.9 var(--f-display);font-stretch:78%;text-transform:uppercase;color:#fff;margin:0}
+.bp-num{display:inline-block;font:800 clamp(2rem,5vw,3.6rem)/1.05 var(--f-display);font-stretch:80%;color:var(--wolf)!important;text-decoration:none;margin:4px 0 16px;letter-spacing:-.01em}
+.bp-num:hover{text-decoration:underline;text-decoration-thickness:3px}
+.bp-sub{color:#bdb7ae}
+.bp-facts{list-style:none;margin:0;padding:0}
+.bp-facts li{display:flex;align-items:center;gap:12px;padding:14px 0;border-top:1px solid #3a3a3d;font-size:1.02rem}
+.bp-facts b{color:#fff}
+.foot-grid{display:grid;grid-template-columns:1fr 2fr;gap:50px;padding:44px 0}
+.foot-grid h2{font:700 .78rem/1 var(--f-display);letter-spacing:.2em;text-transform:uppercase;color:#a8a29a;margin-bottom:16px}
+.foot-grid ul{list-style:none;margin:0;padding:0}
+.foot-grid li{margin:0 0 8px}
+.foot-grid a{text-decoration:none}.foot-grid a:hover{text-decoration:underline}
+.foot-domain p{color:#cfc9c0;max-width:56ch}
+.foot-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font:400 .86rem/1.4 var(--f-display);color:#a8a29a;border-top:1px solid #3a3a3d;padding-top:22px}
+
+@media (max-width:940px){
+  .nav{gap:12px;min-height:62px}
+  .menu-btn{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:2px solid var(--den);background:transparent;color:var(--den);font:700 .95rem var(--f-display);cursor:pointer}
+  #menu{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:var(--snow);border-bottom:2px solid var(--den);padding:8px var(--gut) 18px}
+  #menu.open{display:flex}
+  #menu a{display:block;padding:14px 0;border-bottom:1px solid #d8d1c6}
+  .back,.foot-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .cl-full{display:none}.cl-short{display:inline}
+  .top .btn{padding:10px 14px;min-height:44px}
+  .mark small{display:none}
+}
