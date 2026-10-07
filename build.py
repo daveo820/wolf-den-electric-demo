@@ -94,11 +94,11 @@ page('index.html','Durham Electrician, Veteran Owned | Wolf Den Electric, LLC',
  'Wolf Den Electric is Matt Papanestor&#39;s licensed, veteran owned electrical shop in Durham. 5.0 from 37 Google reviews. Call (919) 521-6412 for a quote today.'.replace('&#39;',"'"), f'''
 <section class="cover"><div class="wrap cover-grid">
  <p class="masthead" aria-hidden="true">Wolf Den</p>
- <div class="cover-copy rv">{K('Durham, NC &middot; Electrical contractor L.35950','kicker--red')}
+ <div class="cover-copy">{K('Durham, NC &middot; Electrical contractor L.35950','kicker--red')}
   <h1>Durham&rsquo;s five star electrician is a guy named <span class="red">Matt.</span></h1>
   <p class="lede">Wolf Den Electric is Matthew Papanestor&rsquo;s licensed, veteran owned shop. Repairs, lighting, generators, home Ethernet, and the wiring for porch and sunroom builds across the Triangle since 2021.</p>
   <div class="cta"><a class="btn btn--red" href="tel:{TEL}">Call {TEL_H}</a><a class="btn btn--ghost" href="contact.html">Get a quote <span aria-hidden="true">&rarr;</span></a></div></div>
- <figure class="cover-photo rv">{img('matt-ladder-light.webp','Matt Papanestor on a ladder, holding up a black barn light he is about to install',sizes='(max-width:900px) 100vw, 40vw',eager=True,w=1250,h=1562)}
+ <figure class="cover-photo">{img('matt-ladder-light.webp','Matt Papanestor on a ladder, holding up a black barn light he is about to install',sizes='(max-width:900px) 100vw, 40vw',eager=True,w=1250,h=1562)}
   <ul class="coverlines"><li><b>5.0</b> 37 Google reviews</li><li><b>30</b> permitted jobs in 2025</li><li><b>Vet</b> owned and operated</li></ul></figure>
 </div></section>
 

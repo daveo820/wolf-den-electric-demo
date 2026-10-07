@@ -154,3 +154,6 @@ legend{font:700 1.05rem var(--f-display);margin-bottom:12px}
   .coverlines b{font-size:1.15rem}
   .notice-in{gap:8px}
 }
+/* hero is never hidden; it settles with transform only so first paint is not delayed */
+@keyframes settle{from{transform:translateY(14px) rotate(2.4deg)}}
+.js-ready .cover-photo{animation:settle .8s var(--ink-ease) both}
