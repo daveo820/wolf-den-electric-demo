@@ -1,6 +1,6 @@
 # Static page builder for the Wolf Den Electric concept. Run: python3 build.py
 import json, os
-BASE = 'https://daveo820.github.io/wolf-den-electric-demo/'  # temporary GitHub Pages link; swap for the new domain later
+BASE = 'https://wolf-den-electric-demo.vercel.app/'  # Vercel production URL
 NEWDOMAIN = 'wolfdenelectricnc.com'  # PLACEHOLDER: unregistered when checked on 7 Oct 2026; Matt picks the real one
 TEL, TEL_H = '+19195216412', '(919) 521&#8209;6412'
 EMAIL = 'mjpapan@gmail.com'
