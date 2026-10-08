@@ -157,3 +157,5 @@ legend{font:700 1.05rem var(--f-display);margin-bottom:12px}
 /* hero is never hidden; it settles with transform only so first paint is not delayed */
 @keyframes settle{from{transform:translateY(14px) rotate(2.4deg)}}
 .js-ready .cover-photo{animation:settle .8s var(--ink-ease) both}
+/* device QA: on 941 to 1320px screens the red feature block bled past the left edge and cut off its text */
+@media (min-width:941px) and (max-width:1320px){.feature-num{margin-left:calc(-1 * var(--gut));padding-left:var(--gut)}}

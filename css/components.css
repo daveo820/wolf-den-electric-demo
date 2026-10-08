@@ -70,3 +70,13 @@
   .top .btn{padding:10px 14px;min-height:44px}
   .mark small{display:none}
 }
+
+/* device QA: WebKit (the Safari engine) crashed the tab at phone and tablet pixel density while many blurred layers animated at once.
+   The ink settle keeps its fade and rise; the blur clearing is dropped on every device. */
+.js-ready .rv{filter:none;transition:opacity .7s var(--ink-ease),transform .7s var(--ink-ease)}
+.js-ready .rv.in{filter:none}
+/* device QA: 44px tap targets on phones */
+.mark{min-height:44px}
+.bp-num{display:inline-flex;align-items:center;min-height:44px}
+/* device QA: placeholder tags readable on phones */
+.ph-tag{font-size:.75rem}
